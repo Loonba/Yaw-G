@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THIS DELIVERY SITE</title>
+  <link rel="stylesheet" href="CSS/index's.css">
+  <style>
+    .services-section,
+    .main-content {
+      display: none;
+    }
+  </style>
+  <!-- Add Bootstrap CSS link here if needed -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"> -->
+</head>
+
+<body>
+  <!-- Services and Assurance Message Section -->
+  <div class="services-section">
+    <h1>Our Services</h1>
+    <p>
+      <h2> and reliable delivery services tailored to meet your needs. </h2>
+    </p>
+    <br> <br> <br>
+    <h2>Assurance</h2>
+    <p>
+      <h2>We guarantee timely deliveries and the utmost care for your packages. </h2>
+    </p>
+  </div>
+  <div class="main-content">
+    <!-- Navigation Bar -->
+    <nav>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="/PAGES/contact.html">Contact</a>
+      <a href="/PAGES/log_in.html">Login</a>
+      <a href="/PAGES/registration.html">Register</a>
+    </nav>
+
+    <!-- Alternative Jumbotron Section -->
+    <div class="custom-jumbotron">
+      <h1 class="display-4">Welcome to THIS DELIVERY SITE</h1>
+      <br></br>
+      <h2></h2>
+      <p class="lead">Your go-to platform for fast and reliable delivery services.</p>
+      <!-- <a class="btn btn-primary btn-lg" href="#order-section" role="button">Place Order</a> -->
+    </div>
+
+    <!-- Login and Register Buttons -->
+    <div class="login-register-buttons">
+      <button onclick="location.href='PAGES/log_in.html'">Login</button>
+      <button onclick="location.href='PAGES/registration.html'">Register</button>
+    </div>
+  </div>
+
+  <!-- Social Media Links -->
+  <div class="container text-center mt-5">
+    <h4>Follow Us</h4>
+    <div class="social-media">
+      <a href="https://www.facebook.com" target="_blank" class="btn btn-outline-primary mx-1">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com" target="_blank" class="btn btn-outline-danger mx-1">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.tiktok.com" target="_blank" class="btn btn-outline-dark mx-1">
+        <i class="fab fa-tiktok"></i>
+      </a>
+      <a href="https://www.whatsapp.com" target="_blank" class="btn btn-outline-success mx-1">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and Popper.js scripts -->
+  <!-- ... (unchanged) -->
+
+  <script>
+    // Display services section initially
+    document.querySelector('.services-section').style.display = 'block';
+
+    // Hide services section and show main content section after 5 seconds
+    setTimeout(function () {
+      document.querySelector('.services-section').style.display = 'none';
+      document.querySelector('.main-content').style.display = 'block';
+    }, 5000);
+  </script>
+</body>
+
+</html>

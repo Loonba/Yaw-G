@@ -1,0 +1,146 @@
+lications, consider implementing proper security measures such as server-side authentication and data handling.
+You said:
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - THIS DELIVERY SITE</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../CSS/registration.css">
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+    <a href="log_in.html">Login</a>
+  </nav>
+
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header text-center">
+            <h2>Register</h2>
+          </div>
+          <div class="card-body">
+            <!-- Registration Form -->
+            <form id="registrationForm" action="/register" method="post" enctype="multipart/form-data">
+              <!-- Username -->
+              <div class="form-group mb-3">
+                <label for="username">Username:</label>
+                <input type="text" class="form-control" id="username" name="username" required>
+              </div>
+
+              <!-- Profile Picture -->
+              <div class="form-group mb-3">
+                <label for="profilePicture">Profile Picture:</label>
+                <input type="file" class="form-control-file" id="profilePicture" name="profilePicture" accept="image/*">
+                <div class="text-muted small">Optional: Choose a profile picture</div>
+              </div>
+
+              <!-- First Name -->
+              <div class="form-group mb-3">
+                <label for="firstName">First Name:</label>
+                <input type="text" class="form-control" id="firstName" name="firstName" required>
+              </div>
+
+              <!-- Middle Name -->
+              <div class="form-group mb-3">
+                <label for="middleName">Middle Name:</label>
+                <input type="text" class="form-control" id="middleName" name="middleName">
+              </div>
+
+              <!-- Surname -->
+              <div class="form-group mb-3">
+                <label for="surname">Surname:</label>
+                <input type="text" class="form-control" id="surname" name="surname" required>
+              </div>
+
+              <!-- Date of Birth -->
+              <div class="form-group mb-3">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" class="form-control" id="dob" name="dob" required>
+              </div>
+
+              <!-- Address -->
+              <div class="form-group mb-3">
+                <label for="address">Address:</label>
+                <textarea class="form-control" id="address" name="address" rows="3" required></textarea>
+              </div>
+
+              <!-- GPS Address -->
+              <div class="form-group mb-3">
+                <label for="gpsAddress">GPS Address:</label>
+                <input type="text" class="form-control" id="gpsAddress" name="gpsAddress">
+              </div>
+
+              <!-- Contact Number -->
+              <div class="form-group mb-3">
+                <label for="contact">Contact:</label>
+                <input type="tel" class="form-control" id="contact" name="contact" required>
+                <div id="contactError" class="text-danger"></div>
+              </div>
+
+              <!-- Email -->
+              <div class="form-group mb-3">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+                <div id="emailError" class="text-danger"></div>
+              </div>
+
+              <!-- Password -->
+              <div class="form-group mb-3">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+                <div id="passwordError" class="text-danger"></div>
+              </div>
+
+              <!-- Confirm Password -->
+              <div class="form-group mb-3">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
+                <div id="confirmPasswordError" class="text-danger"></div>
+              </div>
+
+              <!-- Show Password -->
+              <div class="form-group form-check mb-3">
+                <input type="checkbox" class="form-check-input" id="showPassword">
+                <label class="form-check-label" for="showPassword">Show Password</label>
+              </div>
+
+              <!-- Register Button -->
+              <button type="submit" class="btn btn-primary btn-block">Register</button>
+            </form>
+
+            <p class="mt-3 text-center">
+              Already have an account? <a href="log_in.html">Login here</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and Dependencies -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="../JS/registration_java.js"></script>
+</body>
+
+</html> 

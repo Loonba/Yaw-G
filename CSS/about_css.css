@@ -1,0 +1,107 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light background color */
+    margin: 0; /* Remove default margin */
+}
+.sidebar {
+    width: 200px; /* Set the width of the sidebar */
+    height: 100%; /* Full height */
+    background-color: #ff3c00; /* Sidebar background color */
+    padding-top: 20px;
+    position: fixed; /* Fix the sidebar to the left */
+  }
+  
+  .sidebar h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .sidebar a:hover {
+    background-color: #00b34b; /* Change background color on hover */
+  }
+  
+/* Header Styles */
+
+
+/* Container Styles */
+
+.container {
+    margin-left: 220px; /* Leave space for the sidebar */
+    padding: 20px;
+    flex-grow: 1; /* Allow the main content to grow */
+    margin-bottom: 0; /* Remove bottom margin */
+  }
+/* Section Styles */
+h2 {
+    color: #343a40; /* Darker color for headings */
+    margin-top: 20px; /* Space above headings */
+}
+
+p {
+    color: #555; /* Dark gray text color */
+    line-height: 1.6; /* Line height for readability */
+}
+
+ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+/* Social Media Links */
+.social-media {
+    margin-top: 20px; /* Space above social media section */
+}
+
+.social-media a {
+    font-size: 24px; /* Font size for icons */
+    color: white; /* Primary color for icons */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.social-media a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40; /* Dark footer background */
+    color: white; /* Footer text color */
+    padding: 20px 0; /* Vertical padding */
+    text-align: center; /* Center text */
+    margin-top: 40px; /* Space above footer */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 40px 0; /* Reduce padding on smaller screens */
+    }
+
+    .container {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Adjust heading size */
+    }
+
+    .social-media a {
+        font-size: 20px; /* Adjust icon size */
+    }
+}
+.rights_reserved{
+    color: white;
+}

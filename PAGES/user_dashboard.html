@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard - THIS DELIVERY SITE</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Add your custom styles here -->
+  <link rel="stylesheet" href="../CSS/user_dashboard.css">
+</head>
+<body>
+  <div class="sidebar">
+      <h2 class="text-center text-white">Dashboard</h2>
+      <a href="user_dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+      <a href="order.html"><i class="fas fa-box"></i> Orders</a>
+      <a href="request_page.html"><i class="fas fa-truck"></i> Request Rider</a>
+      <a href="user_settings.html"><i class="fas fa-cog"></i> Settings</a>
+      <a href="../PAGES/contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
+      <a href="../PAGES/about.html"><i class="fas fa-envelope"></i> About Us</a>
+      <a href="/index.html" id="logoutButton"><i class="fas fa-sign-out-alt"></i> Logout</a>
+  </div>
+
+  <div class="main-content">
+      <div class="header">
+          <h1>Welcome, <span id="usernameDisplay">[Username]</span>!</h1>
+      </div>
+
+      <div class="container mt-4">
+          <div class="welcome-message">
+              <h2>Dashboard Overview</h2>
+          </div>
+
+          <div class="row">
+              <div class="col-md-4 mb-4">
+                  <div class="card text-center">
+                      <div class="card-body">
+                          <h3 class="card-title">Orders</h3>
+                          <p class="card-text">View your order history and track shipments.</p>
+                          <a href="order.html" class="btn btn-primary">View Orders</a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-md-4 mb-4">
+                  <div class="card text-center">
+                      <div class="card-body">
+                          <h3 class="card-title">Request a Rider</h3>
+                          <p class="card-text">Request a rider for your delivery needs.</p>
+                          <a href="request_page.html" class="btn btn-primary">Request Rider</a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-md-4 mb-4">
+                  <div class="card text-center">
+                      <div class="card-body">
+                          <h3 class="card-title">Account Settings</h3>
+                          <p class="card-text">Manage your account settings and preferences.</p>
+                          <a href="user_settings.html" class="btn btn-primary">Edit Settings</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h3 class="card-title">Account Settings</h3>
+                        <p class="card-text">Manage your account settings and preferences.</p>
+                        <a href="user_settings.html" class="btn btn-primary">Edit Settings</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    
+  </div>
+<footer>
+  
+  <div class="container text-center mt-5">
+    <h6>Follow Us</h6>
+    <div class="social-media">
+      <a href="https://www.facebook.com" target="_blank" class="btn btn-outline-primary mx-1">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com" target="_blank" class="btn btn-outline-danger mx-1">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.tiktok.com" target="_blank" class="btn btn-outline-dark mx-1">
+        <i class="fab fa-tiktok"></i>
+      </a>
+      <a href="https://www.whatsapp.com" target="_blank" class="btn btn-outline-success mx-1">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+  
+  <!-- Bootstrap JS and dependencies (jQuery, Popper.js) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="../JS/user_dashboard.js"></script>
+</body>
+
+</html>

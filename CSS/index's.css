@@ -1,0 +1,75 @@
+
+body{
+        /* background-image: url('../IMAGES/Screenshot_20231213-131902.png'); */
+
+        background-color:white;   
+        font-style: bold; 
+        font-family: Arial, sans-serif;
+        border-radius: 5px;
+
+}
+.services-section{
+  height: 0%;
+  width: 50%;
+  margin-top: 20%;
+  margin-bottom: 20%;
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: #333;
+  align-items: center;
+}
+
+
+/* Additional styles for text inside the alternative jumbotron */
+.custom-jumbotron h1,
+.custom-jumbotron p,
+.custom-jumbotron a {
+  color: #211eddd3;
+  text-align: center;
+}
+
+nav {
+    background-color: #f4f4f4;
+    padding: 10px;
+    background-color: transparent;
+  }
+
+  nav a {
+    font-style: bold;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+  }
+
+
+/* Styles for login and register buttons */
+.login-register-buttons {
+  width: 30%;
+  height: 30%;
+  background-color: #f8f8f8;
+  text-align: center;
+  margin-top: 20%;
+  margin-bottom: 50%;
+  margin-left: 30%;
+}
+
+.login-register-buttons button {
+    border-radius: 10px;
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #f8f8f8;
+  background-color: blue;
+  width: 150px;
+}
+
+button:hover {
+    background-color: #007bff;
+}
+.custom-jumbotron{
+  border-radius: 5px;
+  background-color: #f4f4f4;
+}
+
+  
