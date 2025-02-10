@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +11,7 @@
       display: none;
     }
   </style>
-  <!-- Add Bootstrap CSS link here if needed -->
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-    crossorigin="anonymous"> -->
 </head>
-
 <body>
   <!-- Services and Assurance Message Section -->
   <div class="services-section">
@@ -34,8 +28,8 @@
   <div class="main-content">
     <!-- Navigation Bar -->
     <nav>
-      <a href="/PAGES/about.html ">About</a>
-      <a href="/PAGES/Services.html">Services</a>
+      <a href="/PAGES/about.html">About</a>
+      <a href="/PAGES/services.html">Services</a>
       <a href="/PAGES/contact.html">Contact</a>
       <a href="/PAGES/log_in.html">Login</a>
       <a href="/PAGES/registration.html">Register</a>
@@ -47,13 +41,21 @@
       <br></br>
       <h2></h2>
       <p class="lead">Your go-to platform for fast and reliable delivery services.</p>
-      <!-- <a class="btn btn-primary btn-lg" href="#order-section" role="button">Place Order</a> -->
     </div>
-
+    
     <!-- Login and Register Buttons -->
     <div class="login-register-buttons">
-      <button onclick="location.href='PAGES/log_in.html'">Login</button>
-      <button onclick="location.href='PAGES/registration.html'">Register</button>
+      <button id="loginButton">Login</button>
+      <button id="registerButton">Register</button>
+      <div id="accountTypeMenu" style="display: none;">
+        <label for="accountType">Select Account Type:</label>
+        <select id="accountType" aria-label="Account Type">
+          <option value="user" selected>User</option>
+          <option value="admin">Admin</option>
+          <option value="rider">Rider</option>
+        </select>
+        <button id="okayButton" style="display: none;">CONFIRM</button>
+      </div>
     </div>
   </div>
 
@@ -76,19 +78,69 @@
     </div>
   </div>
 
-  <!-- Bootstrap JS and Popper.js scripts -->
-  <!-- ... (unchanged) -->
-
   <script>
-    // Display services section initially
-    document.querySelector('.services-section').style.display = 'block';
+   document.addEventListener("DOMContentLoaded", () => {
+  const loginButton = document.getElementById("loginButton");
+  const registerButton = document.getElementById("registerButton");
+  const accountTypeMenu = document.getElementById("accountTypeMenu");
+  const accountType = document.getElementById("accountType");
+  const okayButton = document.getElementById("okayButton");
 
-    // Hide services section and show main content section after 5 seconds
-    setTimeout(function () {
-      document.querySelector('.services-section').style.display = 'none';
-      document.querySelector('.main-content').style.display = 'block';
-    }, 5000);
+  // Display services section initially
+  document.querySelector('.services-section').style.display = 'block';
+
+  // Define a function to show the account type menu and okay button
+  const showAccountTypeMenu = () => {
+    accountTypeMenu.style.display = "block";
+    okayButton.style.display = "block";
+  };
+
+  // Add event listeners for the login and register buttons
+  loginButton.addEventListener("click", () => {
+    showAccountTypeMenu();
+    // Set a data attribute to identify the action
+    okayButton.setAttribute("data-action", "login");
+  });
+
+  registerButton.addEventListener("click", () => {
+    showAccountTypeMenu();
+    // Set a data attribute to identify the action
+    okayButton.setAttribute("data-action", "register");
+  });
+
+  // Redirect based on selected account type and action when okay button is clicked
+  okayButton.addEventListener("click", () => {
+    const selectedType = accountType.value;
+    const action = okayButton.getAttribute("data-action");
+    let redirectUrl = "";
+
+    if (selectedType === "user") {
+      redirectUrl = action === "login" ? "/PAGES/log_in.html" : "/PAGES/registration.html";
+    } else if (selectedType === "admin") {
+      redirectUrl = action === "login" ? "/PAGES/admin_login.html" : "/PAGES/admin_register.html";
+    } else if (selectedType === "rider") {
+      redirectUrl = action === "login" ? "/PAGES/rider_login.html" : "/PAGES/rider_register.html";
+
+    }
+    // else if (selectedType === "user") {
+    //   redirectUrl = action === "register" ? "/PAGES/registration.html" : "/PAGES/log_in.html";
+    // } else if (selectedType === "admin") {
+    //   redirectUrl = action === "register" ? "/PAGES/admin_register.html" : "/PAGES/admin_login.html";
+    // } else if (selectedType === "rider") {
+    //   redirectUrl = action === "register" ? "/PAGES/rider_register.html" : "/PAGES/rider_login.html";
+    // }
+
+
+    window.location.href = redirectUrl;
+    });
+ 
+
+      // Hide services section and show main content section after 5 seconds
+      setTimeout(() => {
+        document.querySelector('.services-section').style.display = 'none';
+        document.querySelector('.main-content').style.display = 'block';
+      }, 5000);
+    });
   </script>
 </body>
-
 </html>
