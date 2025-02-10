@@ -12,34 +12,47 @@
 
 <body>
     
-    <header class="bg-primary text-white text-center py-5">
-        <div class="sidebar">
-            <h2 class="text-center text-white">About Us</h2>
-            <a href="user_dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
-            <a href="order.html"><i class="fas fa-box"></i> Orders</a>
-            <a href="request_page.html"><i class="fas fa-truck"></i> Request Rider</a>
-            <a href="user_settings.html"><i class="fas fa-cog"></i> Settings</a>
-            <a href="../PAGES/contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
-            <a href="../PAGES/about.html"><i class="fas fa-envelope"></i> About Us</a>
+    <div class="sidebar">
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
+            <a href="about.html"><i class="fas fa-envelope"></i> About Us</a>
+            <a href="faq.html"><i class="fas fa-question-circle"></i> FAQ</a>
+            <a href="privacy-policy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a>
+            <a href="terms-conditions.html"><i class="fas fa-file-alt"></i> Terms & Conditions</a>
             <a href="/index.html" id="logoutButton"><i class="fas fa-sign-out-alt"></i> Logout</a>
-        </div>
-    </header>
+    </div>
 
-    <div class="container mt-5">
+    <div class="main-content">
+
+        <div class="header">
+            <h1>Welcome, <span id="usernameDisplay">[Username]</span>!</h1>
+  
+            <div class="user_profile">
+                <img src="../IMAGES/1000008619.jpg" alt="User Profile Picture">
+            </div>
+  
+         <div class="container mt-4">
+            <div class="welcome-message">
+                <h2>ABOUT US</h2>
+            </div>
+            <div class="bar">
+
+            </div>
+        </div>
+  
         <div class="row">
             <div class="col-md-6">
-                <h2>Our Mission</h2>
+                <h3>Our Mission</h3>
                 <p>At THIS DELIVERY SITE, our mission is to provide fast, reliable, and affordable delivery services to our customers. We strive to ensure that your packages arrive safely and on time, every time.</p>
             </div>
             <div class="col-md-6">
-                <h2>Our Vision</h2>
+                <h3>Our Vision</h3>
                 <p>We envision a world where delivery services are seamless and accessible to everyone. Our goal is to be the leading delivery service provider, known for our commitment to excellence and customer satisfaction.</p>
             </div>
         </div>
 
         <div class="row mt-4">
             <div class="col-md-6">
-                <h2>Our Values</h2>
+                <h3>Our Values</h3>
                 <ul>
                     <li><i class="fas fa-check-circle"></i> Integrity: We operate with honesty and transparency.</li>
                     <li><i class="fas fa-check-circle"></i> Customer Focus: Our customers are at the heart of everything we do.</li>
@@ -48,7 +61,7 @@
                 </ul>
             </div>
             <div class="col-md-6">
-                <h2>Our Story</h2>
+                <h3>Our Story</h3>
                 <p>Founded in [Year], THIS DELIVERY SITE started with a simple idea: to make delivery services more efficient and customer-friendly. Over the years, we have grown into a trusted name in the industry, serving thousands of satisfied customers.</p>
             </div>
         </div>
@@ -56,26 +69,26 @@
         
     </div>
 
-    <footer class="bg-dark text-white text-center py-3 mt-5">
-        <div class="text-center mt-5">
-            <h2>Follow Us</h2>
-            <div class="social-media">
-                <a href="https://www.facebook.com" target="_blank" class="btn btn-outline-primary mx-1">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://www.instagram.com" target="_blank" class="btn btn-outline-danger mx-1">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.tiktok.com" target="_blank" class="btn btn-outline-dark mx-1">
-                    <i class="fab fa-tiktok"></i>
-                </a>
-                <a href="https://www.whatsapp.com" target="_blank" class="btn btn-outline-success mx-1">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-            </div>
-        </div>
-        <p class="rights_reserved">&copy; 2023 THIS DELIVERY SITE. All rights reserved.</p>
-    </footer>
+<footer >    
+  <div class="container text-center mt-5">
+    <h6>Follow Us</h6>
+    <div class="social-media">
+      <a href="https://www.facebook.com" target="_blank" class="btn btn-outline-primary mx-1">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com" target="_blank" class="btn btn-outline-danger mx-1">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.tiktok.com" target="_blank" class="btn btn-outline-dark mx-1">
+        <i class="fab fa-tiktok"></i>
+      </a>
+      <a href="https://www.whatsapp.com" target="_blank" class="btn btn-outline-success mx-1">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+  </div>
+    <p class="rights_reserved">&copy; 2023 THIS DELIVERY SITE. All rights reserved.</p>
+</footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
