@@ -2,32 +2,37 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>User Dashboard - THIS DELIVERY SITE</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <!-- Font Awesome for Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <!-- Add your custom styles here -->
-  <link rel="stylesheet" href="../CSS/user_dashboard.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USER DASHBOARD - THIS DELIVERY SITE</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/user_dashboard.css"> <!-- Link to your custom CSS -->
 </head>
-<body>
-  <div class="sidebar">
-      <h2 class="text-center text-white">Dashboard</h2>
-      <a href="user_dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
-      <a href="order.html"><i class="fas fa-box"></i> Orders</a>
-      <a href="request_page.html"><i class="fas fa-truck"></i> Request Rider</a>
-      <a href="user_settings.html"><i class="fas fa-cog"></i> Settings</a>
-      <a href="../PAGES/contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
-      <a href="../PAGES/about.html"><i class="fas fa-envelope"></i> About Us</a>
-      <a href="/index.html" id="logoutButton"><i class="fas fa-sign-out-alt"></i> Logout</a>
-  </div>
 
-  <div class="main-content">
+<body>
+    
+  <div class="sidebar">
+    <!-- <h2 class="text-center text-white">DASHBOARD</h2> -->
+    <a href="user_dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+    <a href="order.html"><i class="fas fa-box"></i> Orders</a>
+    <a href="request_page.html"><i class="fas fa-truck"></i> Request Rider</a>
+    <a href="user_settings.html"><i class="fas fa-cog"></i> Settings</a>
+    <a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
+    <a href="about.html"><i class="fas fa-envelope"></i> About Us</a>
+    <a href="faq.html"><i class="fas fa-question-circle"></i> FAQ</a>
+    <a href="privacy-policy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a>
+    <a href="terms-conditions.html"><i class="fas fa-file-alt"></i> Terms & Conditions</a>
+    <a href="/index.html" id="logoutButton"><i class="fas fa-sign-out-alt"></i> Logout</a>
+  </div>>
+
+    <div class="main-content">
       <div class="header">
           <h1>Welcome, <span id="usernameDisplay">[Username]</span>!</h1>
-      </div>
+
+          <div class="user_profile">
+              <img src="../IMAGES/1000008619.jpg" alt="User Profile Picture">
+          </div>
 
       <div class="container mt-4">
           <div class="welcome-message">
@@ -78,8 +83,9 @@
     </div>
     
   </div>
-<footer>
-  
+
+
+<footer >    
   <div class="container text-center mt-5">
     <h6>Follow Us</h6>
     <div class="social-media">
@@ -97,14 +103,12 @@
       </a>
     </div>
   </div>
+    <p class="rights_reserved">&copy; 2023 THIS DELIVERY SITE. All rights reserved.</p>
 </footer>
 
-  
-  <!-- Bootstrap JS and dependencies (jQuery, Popper.js) -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="../JS/user_dashboard.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
